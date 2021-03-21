@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:id="@+id/containerSong"
+    tools:context=".MPlayer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/nowPlaying">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Now Playing"
+            android:textSize="25dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:id="@+id/musicImageCard">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cover_art"
+            android:id="@+id/cardImage"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is song name"
+        android:id="@+id/songName"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is song Artist"
+        android:id="@+id/songArtis"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/seekBarLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1:28"
+            android:id="@+id/durationPlayed"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4:03"
+            android:id="@+id/durationTotal"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarDuration"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:progressBackgroundTint="@color/white"
+            android:progressTint="#E81616"
+            android:thumbTint="#AE1111"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/playButtonContainer">
+
+        <ImageView
+            android:id="@+id/previous"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/ic_baseline_skip_previous_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="@id/playPause"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/playPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#F47474"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/play"
+            app:layout_constraintLeft_toLeftOf="@id/previous"
+            app:layout_constraintRight_toRightOf="@id/next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="35dp"
+            android:src="@drawable/ic_baseline_skip_next_24"
+            app:layout_constraintLeft_toLeftOf="@id/playPause"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

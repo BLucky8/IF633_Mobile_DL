@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:text="Profile Saya"/>
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIM : 00000031943"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama : Lucky Benedict"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kelas : DL"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Referensi : "
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Youtube : https://www.youtube.com/watch?v=bsXaM4G4D_w&amp;list=PLwQLA73lSe1RfjMzbRLoIkcIJBu25FnVJ"
+            android:textSize="20dp"
+            android:linksClickable="true"
+            android:autoLink="web"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://www.youtube.com/watch?v=8rnFZdQbYY8"
+            android:textSize="20dp"
+            android:linksClickable="true"
+            android:autoLink="web"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:linksClickable="true"
+            android:autoLink="web"
+            android:text="Website :https://www.tutorialspoint.com/android/android_login_screen.htm "
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
