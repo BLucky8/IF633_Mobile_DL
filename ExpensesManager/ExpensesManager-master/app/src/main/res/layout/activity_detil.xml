@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetilActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Barang"
+        android:textColor="#66023c"/>
+
+    <EditText
+        android:id="@+id/etNim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harga:"
+        android:textColor="#66023c"/>
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gambar Barang"
+        android:textColor="#66023c"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/catur"
+        android:layout_marginTop="15dp"
+        android:id="@+id/isifoto"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabisifoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_photo_camera_black_48dp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView1"-->
+<!--        style="@style/behindMenuItemLabel1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="1dp"-->
+<!--        android:text="FaceBook Feeds" />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+
+
+<!--    <ImageView-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@drawable/ic_photo_camera_black_48dp"-->
+<!--        android:id="@+id/isifoto"/>-->
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="SIMPAN"
+            android:onClick="simpanData"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#66023c"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="BATAL"
+            android:onClick="batal"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#66023c"
+            android:layout_gravity="center"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".income_expanse">
+
+    <Button
+        android:id="@+id/toHome"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="23dp"
+        android:text="back"
+        android:textSize="8dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#66023c"
+        />
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_margin="10sp"
+        android:inputType="textCapCharacters"
+        android:layout_height="wrap_content"
+        android:text="Rp. "
+        android:hint="Enter Your Income"/>
+    <EditText
+        android:id="@+id/userMobile"
+        android:layout_width="match_parent"
+        android:layout_margin="10sp"
+        android:inputType="textCapCharacters"
+        android:layout_height="wrap_content"
+        android:hint="Enter The Description"/>
+    <EditText
+        android:id="@+id/userDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="dd/mm/yyy"
+        android:layout_margin="10sp"
+        android:inputType="textCapCharacters"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_margin="10sp"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textColor="@color/white"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contactListid"
+        android:layout_width="match_parent"
+        android:layout_margin="10sp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

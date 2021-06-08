@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="umn.ac.id.week09_31943.umn.ac.id.week09_31943.Homepage">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Reset"
+        app:showAsAction="never" />
+</menu>
